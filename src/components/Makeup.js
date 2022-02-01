@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMakeupFromApi } from '../redux/makeupReducer';
 
+// Displays all the makeup brands available & total no. of products for the brand
 const Makeup = () => {
   const makeupArray = useSelector((state) => state.makeupReducer);
   const dispatch = useDispatch();
@@ -12,16 +13,9 @@ const Makeup = () => {
     <div>
       {makeupArray.map((makeup) => (
         <div key={makeup.id}>
-          <img alt="makeup" src={makeup.image} />
-          <div>
-            <h3>
-              {makeup.title}
-            </h3>
-            <h5>
-              {makeup.priceSign}
-              {makeup.price}
-            </h5>
-          </div>
+          <h3>
+            {makeup.brand}
+          </h3>
         </div>
       ))}
 

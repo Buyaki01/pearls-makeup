@@ -20,8 +20,11 @@ export const getMakeupFromApi = () => async (dispatch) => {
     const { price } = makeupData[i];
     const { description } = makeupData[i];
     const image = makeupData[i].image_link;
+    const { brand } = makeupData[i];
+    // const filterByBrand = await Axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
+    // const filterByBrand = await Axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand={brand}');
     const object = {
-      id, title, description, priceSign, price, image,
+      id, title, description, priceSign, price, image, brand,
     };
     makeup.push(object);
   }
