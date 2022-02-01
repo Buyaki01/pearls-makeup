@@ -9,7 +9,7 @@ const getMakeup = (payload) => ({
   payload,
 });
 
-export const getMissionsFromApi = () => async (dispatch) => {
+export const getMakeupFromApi = () => async (dispatch) => {
   const returnData = await Axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
   const makeupData = returnData.data;
   const makeup = [];
@@ -19,7 +19,7 @@ export const getMissionsFromApi = () => async (dispatch) => {
     const priceSign = makeupData[i].price_sign;
     const { price } = makeupData[i];
     const { description } = makeupData[i];
-    const { image } = makeupData[i].image_link;
+    const image = makeupData[i].image_link;
     const object = {
       id, title, description, priceSign, price, image,
     };
