@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import { MemoryRouter } from 'react-router-dom'; 
-import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import { render } from '@testing-library/react';
 import Header from '../components/Header';
 import Makeup from '../components/Makeup';
 import Details from '../components/Details';
@@ -19,11 +19,11 @@ describe('Test UI of the webpage', () => {
       <Provider store={store}>
         <Makeup />
       </Provider>,
-      { wrapper: MemoryRouter }, 
-    ); 
-    expect(asFragment()).toMatchSnapshot(); 
+      { wrapper: MemoryRouter },
+    );
+    expect(asFragment()).toMatchSnapshot();
   });
- 
+
   it('Displays the details page', () => {
     const tree = renderer.create(<Details />).toJSON();
     expect(tree).toMatchSnapshot();
