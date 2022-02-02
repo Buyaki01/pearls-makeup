@@ -1,6 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Acumin Pro");
+@import url("https://fonts.googleapis.com/css?family=Helvetica Neue");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: rgb(236, 76, 138);
+  text-decoration: none;
+  color: white;
+  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.makeUpContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.makeUpContents {
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.detailsContents {
+  padding: 50px;
+  margin: 20px;
 }

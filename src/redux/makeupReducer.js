@@ -12,15 +12,17 @@ const getMakeup = (payload) => ({
 export const getMakeupFromApi = () => async (dispatch) => {
   const returnData = await Axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
   const makeupData = returnData.data;
-  const makeup = [];
+  const makeup = {};
   for (let i = 0; i < makeupData.length; i += 1) {
     const { brand } = makeupData[i];
-    const object = {
-      brand,
-    };
-    makeup.push(object);
+    if (makeup[brand]) {
+      makeup[brand] += 1;
+    } else {
+      makeup[brand] = 1;
+    }
   }
-  dispatch(getMakeup(makeup));
+  const makeUpArray = Object.entries(makeup);
+  dispatch(getMakeup(makeUpArray));
 };
 
 const reducer = (state = initialState, action) => {

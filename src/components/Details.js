@@ -9,7 +9,6 @@ const Details = () => {
   useEffect(async () => {
     const filterByBrand = await Axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`);
     const filteredMakeupData = await filterByBrand.data;
-    console.log(filteredMakeupData);
     for (let i = 0; i < filteredMakeupData.length; i += 1) {
       const title = filteredMakeupData[i].name;
       const { id } = filteredMakeupData[i];
@@ -21,15 +20,13 @@ const Details = () => {
       const object = {
         title, id, priceSign, price, description, image, brand,
       };
-      console.log(object);
       setfilteredMakeupArray((prevState) => [...prevState, object]);
     }
   }, []);
-  console.log(filteredMakeupArray);
   return (
-    <div>
+    <div className="detailsContainer">
       {filteredMakeupArray.map((makeup) => (
-        <div key={makeup.id}>
+        <div key={makeup.id} className="detailsContents">
           <img alt="makeup" src={makeup.image} />
           <div>
             <h3>
