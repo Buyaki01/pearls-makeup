@@ -38,12 +38,21 @@
   grid-template-columns: auto auto;
 }
 
-.img {
-  width: 100%;
+img {
+  max-width: 100%;
   height: 100%;
 }
 
 .detailsContents {
   padding: 50px;
   margin: 20px;
+}
+
+.makeupTitle,
+.makeupPrice {
+  margin-bottom: 4px;
+}
+
+.description {
+  margin-top: 4px;
 }

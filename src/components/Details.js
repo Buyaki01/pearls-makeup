@@ -27,16 +27,18 @@ const Details = () => {
     <div className="detailsContainer">
       {filteredMakeupArray.map((makeup) => (
         <div key={makeup.id} className="detailsContents">
-          <img alt="makeup" src={makeup.image} />
+          <div className="images">
+            <img alt="makeup" src={makeup.image} onError={(e) => { e.target.src = 'https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png'; }} />
+          </div>
           <div>
-            <h3>
+            <h3 className="makeupTitle">
               {makeup.title}
             </h3>
-            <h5>
+            <h5 className="makeupPrice">
               {makeup.priceSign}
               {makeup.price}
             </h5>
-            <p>{makeup.description}</p>
+            <p className="description">{makeup.description}</p>
           </div>
         </div>
       ))}
