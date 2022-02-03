@@ -13,14 +13,6 @@
 ## Live Demo
 [Live Demo](https://elastic-bell-b8bcdf.netlify.app/)
 
-## Screenshots
-
-### Home page
-[Makeup](/home/ritta/Pictures/makeupweb1.png)
-
-### Details page
-[Details](/home/ritta/Pictures/makeupweb2.png)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps
