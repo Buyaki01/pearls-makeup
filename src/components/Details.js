@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
+import { IoMdArrowRoundBack } from '@react-icons/all-files/io/IoMdArrowRoundBack';
 
 const Details = () => {
   const params = useParams();
@@ -25,6 +26,9 @@ const Details = () => {
   }, []);
   return (
     <div className="detailsContainer">
+      <NavLink to="/">
+        <IoMdArrowRoundBack className="back-icon" />
+      </NavLink>
       {filteredMakeupArray.map((makeup) => (
         <div key={makeup.id} className="detailsContents">
           <div className="images">

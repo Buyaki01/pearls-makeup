@@ -1,4 +1,6 @@
 import { FaPaintBrush } from 'react-icons/fa';
+import { BsFillMicFill } from '@react-icons/all-files/bs/BsFillMicFill';
+import { IoIosSettings } from '@react-icons/all-files/io/IoIosSettings';
 
 const Header = () => (
   <div className="header">
@@ -10,6 +12,10 @@ const Header = () => (
       />
       Pearls Makeup
     </h1>
+    <div className="micSettingsIcon">
+      <BsFillMicFill className="mic icon" />
+      <IoIosSettings className="settings icon" />
+    </div>
   </div>
 );
 export default Header;
