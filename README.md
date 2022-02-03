@@ -11,15 +11,15 @@
 - React Testing Library
 
 ## Live Demo
-[Live Demo]()
+[Live Demo](https://elastic-bell-b8bcdf.netlify.app/)
 
 ## Screenshots
 
 ### Home page
-[Makeup]()
+[Makeup](/home/ritta/Pictures/makeupweb1.png)
 
 ### Details page
-[Details]()
+[Details](/home/ritta/Pictures/makeupweb2.png)
 
 ## Getting Started
 
