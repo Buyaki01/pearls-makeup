@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Acumin Pro");
-@import url("https://fonts.googleapis.com/css?family=Helvetica Neue");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  background-color: rgb(236, 76, 138);
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(236, 76, 138);
   text-decoration: none;
   color: white;
-  font-family: 'Acumin Pro', sans-serif;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -22,20 +21,53 @@
   line-height: 1.5em;
 }
 
+.micSettingsIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.mic {
+  margin-right: 10px;
+}
+
 .makeUpContainer {
   display: grid;
   grid-template-columns: auto auto;
+  background: url(./images/makeup.jpg) center center;
+  background-color: transparent;
 }
 
 .makeUpContents {
   padding: 50px;
-  margin: 20px;
   text-align: center;
+  border: 1px solid gray;
+  position: relative;
+  background-color: rgba(236, 76, 137, 0.87);
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.brandName {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.productsNumber {
+  margin-top: 10px;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 .detailsContainer {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 img {
@@ -44,6 +76,7 @@ img {
 }
 
 .detailsContents {
+  width: 100%;
   padding: 50px;
   margin: 20px;
 }
@@ -55,4 +88,16 @@ img {
 
 .description {
   margin-top: 4px;
+}
+
+.back-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .detailsContents {
+    width: 45%;
+  }
 }

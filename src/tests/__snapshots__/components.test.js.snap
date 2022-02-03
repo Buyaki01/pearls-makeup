@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test UI of the webpage Displays the Header 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    Pearls Makeup
+  </h1>
+</div>
+`;
+
+exports[`Test UI of the webpage Displays the Makeup page 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+  >
+    <h1>
+      Pearls Makeup
+    </h1>
+  </div>
+  <div
+    class="makeUpContainer"
+  />
+</DocumentFragment>
+`;
+
+exports[`Test UI of the webpage Displays the details page 1`] = `
+<div
+  className="detailsContainer"
+/>
+`;
