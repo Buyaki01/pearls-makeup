@@ -2,7 +2,7 @@
 
 # pearls-makeup
 
-> Working with data from the [Makeup API](http://makeup-api.herokuapp.com/api/v1/products.json). Build a web application that has information about the products available for makeup brands that are stated in the homepage.
+> Pearls makeup has different makeup brands whereby when you click on the makeup brand, it takes you to the products of that makeup brand.
 
 ## Built With
 
