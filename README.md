@@ -17,7 +17,11 @@
 [Video Presentation](https://www.loom.com/share/c1ef40684c9948dc979c501472594094)
 
 ## Screenshots
+
+### Makeup Page
 ![Main Page](src/images/makeupHomePage.png)
+
+### Details Page
 ![Details Page](src/images/makeupDetailsPage.png)
 
 ## Getting Started
