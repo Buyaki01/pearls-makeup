@@ -2,7 +2,7 @@
 
 # pearls-makeup
 
-> Working with data from the (Makeup API)[http://makeup-api.herokuapp.com/api/v1/products.json]. Build a web application that has information about the products available for makeup brands that are stated in the homepage.
+> Working with data from the [Makeup API](http://makeup-api.herokuapp.com/api/v1/products.json). Build a web application that has information about the products available for makeup brands that are stated in the homepage.
 
 ## Built With
 
@@ -12,6 +12,13 @@
 
 ## Live Demo
 [Live Demo](https://elastic-bell-b8bcdf.netlify.app/)
+
+## Video
+[Video Presentation](https://www.loom.com/share/c1ef40684c9948dc979c501472594094)
+
+## Screenshots
+![Main Page](src/images/makeupHomePage.png)
+![Details Page](src/images/makeupDetailsPage.png)
 
 ## Getting Started
 
